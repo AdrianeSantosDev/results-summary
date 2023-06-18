@@ -135,7 +135,11 @@ main .summary div article:nth-child(1)::before {
     linear-gradient(-90deg, #000 2px, rgba(0, 0, 0, 0) 0) 1px 50%/100%
       calc(100% - 20px) repeat-x,
     linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-  -webkit-mask-composite: destination-out;
+  mask: linear-gradient(0deg, #000 2px, rgba(0, 0, 0, 0) 0) 50% 1px /
+      calc(100% - 20px) 100% repeat-y,
+    linear-gradient(-90deg, #000 2px, rgba(0, 0, 0, 0) 0) 1px 50%/100%
+      calc(100% - 20px) repeat-x,
+    linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   mask-composite: exclude;
 }
 main .summary div article:nth-child(1) .iconText {
@@ -174,7 +178,11 @@ main .summary div article:nth-child(2)::before {
     linear-gradient(-90deg, #000 2px, rgba(0, 0, 0, 0) 0) 1px 50%/100%
       calc(100% - 20px) repeat-x,
     linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-  -webkit-mask-composite: destination-out;
+  mask: linear-gradient(0deg, #000 2px, rgba(0, 0, 0, 0) 0) 50% 1px /
+      calc(100% - 20px) 100% repeat-y,
+    linear-gradient(-90deg, #000 2px, rgba(0, 0, 0, 0) 0) 1px 50%/100%
+      calc(100% - 20px) repeat-x,
+    linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   mask-composite: exclude;
 }
 main .summary div article:nth-child(2) .iconText {
@@ -201,7 +209,11 @@ main .summary div article:nth-child(3)::before {
     linear-gradient(-90deg, #000 2px, rgba(0, 0, 0, 0) 0) 1px 50%/100%
       calc(100% - 20px) repeat-x,
     linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-  -webkit-mask-composite: destination-out;
+  mask: linear-gradient(0deg, #000 2px, rgba(0, 0, 0, 0) 0) 50% 1px /
+      calc(100% - 20px) 100% repeat-y,
+    linear-gradient(-90deg, #000 2px, rgba(0, 0, 0, 0) 0) 1px 50%/100%
+      calc(100% - 20px) repeat-x,
+    linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   mask-composite: exclude;
 }
 main .summary div article:nth-child(3) .iconText {
@@ -228,7 +240,11 @@ main .summary div article:nth-child(4)::before {
     linear-gradient(-90deg, #000 2px, rgba(0, 0, 0, 0) 0) 1px 50%/100%
       calc(100% - 20px) repeat-x,
     linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-  -webkit-mask-composite: destination-out;
+  mask: linear-gradient(0deg, #000 2px, rgba(0, 0, 0, 0) 0) 50% 1px /
+      calc(100% - 20px) 100% repeat-y,
+    linear-gradient(-90deg, #000 2px, rgba(0, 0, 0, 0) 0) 1px 50%/100%
+      calc(100% - 20px) repeat-x,
+    linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   mask-composite: exclude;
 }
 main .summary div article:nth-child(4) .iconText {
