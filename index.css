@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Hanken Grotesk;
+  color: hsl(0, 0%, 100%);
+}
+
+body {
+  min-height: 100vh;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  justify-self: center;
+  align-self: center;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+  max-height: 28rem;
+  max-width: 40rem;
+}
+
+main .note {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 25px;
+  padding-inline: 3rem;
+  padding-block: 2rem;
+  height: 100%;
+}
+main .note h1 {
+  opacity: 0.6;
+  font-size: 1.3rem;
+}
+main .note span {
+  background-image: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  width: 11rem;
+  height: 11rem;
+}
+main .note span h2 {
+  font-size: 4rem;
+}
+main .note span h3 {
+  font-size: 1rem;
+  opacity: 0.4;
+}
+main .note h4 {
+  font-size: 1.7rem;
+  margin-bottom: -1rem;
+}
+main .note h5 {
+  font-size: 1rem;
+  opacity: 0.7;
+  max-width: 14rem;
+  width: 100%;
+  font-weight: lighter;
+}
+
+main .summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+  border-radius: 25px;
+  padding-inline: 2rem;
+  padding-block: 2.5rem;
+  width: 100%;
+  gap: 1rem;
+  box-shadow: 17px 12px 45px -21px hsl(241, 100%, 89%);
+}
+main .summary h1 {
+  color: hsl(224, 30%, 27%);
+  font-size: 1.3rem;
+}
+main .summary div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 0.8rem;
+}
+main .summary div article {
+  font-size: 16px;
+  position: relative;
+}
+main .summary div article .iconText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+main .summary div article span {
+  color: #adafc0;
+  z-index: 1;
+}
+main .summary div article strong {
+  color: hsl(224, 30%, 27%);
+  z-index: 1;
+}
+main .summary div article:nth-child(1) {
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 0.8rem;
+  padding-block: 0.9rem;
+  background-color: rgba(255, 87, 87, 0.05);
+}
+main .summary div article:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: hsl(241, 100%, 89%);
+  padding: 1px;
+  border-radius: 10px;
+  -webkit-mask: linear-gradient(0deg, #000 2px, rgba(0, 0, 0, 0) 0) 50% 1px /
+      calc(100% - 20px) 100% repeat-y,
+    linear-gradient(-90deg, #000 2px, rgba(0, 0, 0, 0) 0) 1px 50%/100%
+      calc(100% - 20px) repeat-x,
+    linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+main .summary div article:nth-child(1) .iconText {
+  color: hsl(0, 100%, 67%);
+}
+main .summary div article:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  background-color: #fff6f6;
+  width: 100%;
+  height: 100%;
+  max-width: 16rem;
+  max-height: 2rem;
+  margin-left: -0.87rem;
+  margin-top: -0.3rem;
+}
+main .summary div article:nth-child(2) {
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 0.8rem;
+  padding-block: 0.9rem;
+  background-color: rgba(255, 176, 31, 0.05);
+}
+main .summary div article:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: hsl(241, 100%, 89%);
+  padding: 1px;
+  border-radius: 10px;
+  -webkit-mask: linear-gradient(0deg, #000 2px, rgba(0, 0, 0, 0) 0) 50% 1px /
+      calc(100% - 20px) 100% repeat-y,
+    linear-gradient(-90deg, #000 2px, rgba(0, 0, 0, 0) 0) 1px 50%/100%
+      calc(100% - 20px) repeat-x,
+    linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+main .summary div article:nth-child(2) .iconText {
+  color: hsl(39, 100%, 56%);
+}
+main .summary div article:nth-child(3) {
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 0.8rem;
+  padding-block: 0.9rem;
+  background-color: rgba(0, 189, 145, 0.05);
+}
+main .summary div article:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: hsl(241, 100%, 89%);
+  padding: 1px;
+  border-radius: 10px;
+  -webkit-mask: linear-gradient(0deg, #000 2px, rgba(0, 0, 0, 0) 0) 50% 1px /
+      calc(100% - 20px) 100% repeat-y,
+    linear-gradient(-90deg, #000 2px, rgba(0, 0, 0, 0) 0) 1px 50%/100%
+      calc(100% - 20px) repeat-x,
+    linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+main .summary div article:nth-child(3) .iconText {
+  color: hsl(166, 100%, 37%);
+}
+main .summary div article:nth-child(4) {
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 0.8rem;
+  padding-block: 0.9rem;
+  background-color: rgba(17, 37, 212, 0.05);
+}
+main .summary div article:nth-child(4)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: hsl(241, 100%, 89%);
+  padding: 1px;
+  border-radius: 10px;
+  -webkit-mask: linear-gradient(0deg, #000 2px, rgba(0, 0, 0, 0) 0) 50% 1px /
+      calc(100% - 20px) 100% repeat-y,
+    linear-gradient(-90deg, #000 2px, rgba(0, 0, 0, 0) 0) 1px 50%/100%
+      calc(100% - 20px) repeat-x,
+    linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+main .summary div article:nth-child(4) .iconText {
+  color: hsl(234, 85%, 45%);
+}
+main .summary button {
+  background-color: hsl(224, 30%, 27%);
+  width: 100%;
+  border: none;
+  border-radius: 25px;
+  padding: 1rem;
+  font-size: 15.4px;
+}
+main .summary button:hover {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+@media screen and (max-width: 700px) {
+  main .summary div article:nth-child(1)::after {
+    display: none;
+  }
+  main {
+    height: 100%;
+    grid-template-columns: 1fr;
+    max-height: 49rem;
+  }
+  main .note {
+    gap: 1rem;
+  }
+  main .note h5 {
+    max-width: 16rem;
+  }
+
+  main .summary {
+    box-shadow: 0px 8px 23px 3px hsl(241, 100%, 89%);
+  }
+} /*# sourceMappingURL=index.css.map */
