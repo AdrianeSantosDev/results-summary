@@ -140,6 +140,7 @@ main .summary div article:nth-child(1)::before {
       calc(100% - 20px) repeat-x,
     linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
 }
 main .summary div article:nth-child(1) .iconText {
   color: hsl(0, 100%, 67%);
